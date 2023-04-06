@@ -1,0 +1,80 @@
+.categoryDishes{
+    width: 100%;
+}
+.categoryDishes .item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categoryDishes .caloriesAndCash{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categoryDishes .itemImage{
+    width: 10vw;
+    height: 10vw;
+}
+.categoryDishes .foodType{
+    position: absolute;
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.categoryDishes .foodType img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.categoryDishes img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categoryDishes .content{
+    box-sizing: border-box;
+    width: 80vw;
+    display: flex;
+}
+
+.categoryDishes .subContent{
+    padding-left: 3rem;
+}
+
+.categoryDishes .caloriesAndImg{
+    width: 10vw;
+}
+
+.categoryDishes .content h1,.categoryDishes .content h3{
+    color: black;
+}
+.categoryDishes .content h1{
+    font-size: 28px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .categoryDishes .item{
+        gap:20px;
+    }
+    .categoryDishes .content{
+        width: 60vw;
+    }
+    .categoryDishes .caloriesAndImg{
+        width: 40vw;
+    }
+    .categoryDishes .caloriesAndCash{
+        width: 50vw;
+    }
+    .categoryDishes .itemImage{
+        width: 30vw;
+        height: 30vw;
+    }
+  }

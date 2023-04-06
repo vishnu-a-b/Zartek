@@ -1,0 +1,20 @@
+.menuCategory {
+    color: gray;
+}
+
+.active {
+    color: red;
+}
+
+.active hr {
+    background-color: red;
+    border: none;
+    height: 2px;
+}
+.slick-next:before, .slick-next {
+    display: none !important;
+}
+
+.slick-dots{
+    display: none !important;
+}

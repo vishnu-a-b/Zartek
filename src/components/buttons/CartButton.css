@@ -1,0 +1,15 @@
+.cartButton{
+    width: fit-content;
+    display: flex;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    gap: 10px;
+}
+.cartButton button{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+
+}

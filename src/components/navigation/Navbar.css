@@ -1,0 +1,36 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    color: gray;
+    
+}
+.navBar h1{
+    font-size: 2rem;
+}
+
+.navBar .cart {
+    display: flex;
+    position: relative;
+}
+
+.navBar .cart img {
+    width: 2rem;
+    margin-right: 8px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
