@@ -7,7 +7,6 @@ import CategoryDishes from "./CategoryDishes";
 import "./MenuCategory.css"
 
 export default function MenuCategory(props) {
-  console.log(props)
   const settings = {
     dots: false,
     infinite: true,
@@ -18,7 +17,7 @@ export default function MenuCategory(props) {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -53,7 +52,6 @@ export default function MenuCategory(props) {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const handleClick = (cat, dishes, index) => {
-    console.log(dishes);
     setDishes(dishes);
     setActiveSlide(index);
   };
@@ -72,7 +70,7 @@ export default function MenuCategory(props) {
           );
         })}
       </Slider>
-      <CategoryDishes dishes={dishes} />
+      <CategoryDishes dishes={dishes}/>
     </div>
   );
 };

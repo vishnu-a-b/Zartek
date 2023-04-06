@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="cart">
         <h3>My Orders</h3>
         <img src={cartImg} alt="cart" />
-        <div className="cart-count">{count}</div>
+        <div className="cartCount">{count}</div>
       </div>
 
     </nav>

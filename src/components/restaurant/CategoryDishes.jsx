@@ -8,13 +8,11 @@ import veg from "../../assets/images/veg.svg";
 export default function CategoryDishes(props) {
   return (
 
-    <div className='categoryDishes'>
-      {props.dishes === undefined
-        ? ""
-        : props.dishes.map((item, index) => {
+    <div className='categoryDishes' >
+      {props.dishes.map((item) => {
           return (
-            <div>
-              <div className="item" key={index}>
+            <div key={props.dish_id}>
+              <div className="item" >
 
                 <div className='content'>
                   <div className='foodType'>
@@ -38,7 +36,7 @@ export default function CategoryDishes(props) {
                     {item.dish_Availability ? (
                       <CartButton item={item} cartCount={props.setCart} />
                     ) : (
-                      <h4>
+                      <h4 className='colorRed'>
                         Not Available
                       </h4>
                     )}
